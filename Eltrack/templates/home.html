@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Input</title>
+</head>
+<body>
+    <h1>Enter Your Phone Number</h1>
+    <form action="{{ url_for('phone_form') }}" method="post">
+        <label for="phone">Phone Number:</label>
+        <input type="string" id="phone" name="phone"  required>
+        <small></small>
+        
+        <br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
